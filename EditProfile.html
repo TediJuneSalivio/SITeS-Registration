@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image" href="sitesLogo.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="EditProfile.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Edit Profile</title>
+</head>
+
+<body>
+    <button class="btn" onclick="goHome()"><i class="fa fa-home"></i></button>
+    <div class="container bootstrap snippets bootdey">
+        <h1 class="text-primary"><span class="glyphicon glyphicon-user"></span>Edit Profile</h1>
+        <hr style="border: 2px solid orange;">
+        <div class="row">
+            <!-- left column -->
+            <div class="col-md-3">
+                <div class="text-center">
+                    <img id="profileEdit" src="" class="avatar img-circle" alt="avatar">
+                    <h6></h6>
+                </div>
+            </div>
+
+            <!-- edit form column -->
+            <div class="col-md-9 personal-info">
+                <div class="alert alert-info alert-dismissable">
+                    <a class="panel-close close" data-dismiss="alert">×</a>
+                    <i class="fa fa-coffee"></i> Edit your Last Name, First Name, and your Year Level.
+                </div>
+                <h3>Student Information</h3>
+
+                <form>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">First name:</label>
+                        <div class="col-lg-8">
+                            <input id="fNameEdit" class="form-control" type="text" placeholder="First Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Last name:</label>
+                        <div class="col-lg-8">
+                            <input id="lNameEdit" class="form-control" type="text" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-lg-3 control-label">Year Level:</label>
+                        <div class="col-lg-8">
+                            <div class="ui-select">
+                                <select id="yearEdit" class="form-control">
+                                    <option >1st Year</option>
+                                    <option >2nd Year</option>
+                                    <option >3rd Year</option>
+                                    <option >4th Year</option>
+                                </select>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+                <button id="btnCancel" type="button" class="btn btn-danger" onclick="cancel()">Cancel</button>
+                <button id="btnSubmit" type="button" class="btn btn-success" onclick="editProfile()">Submit Information</button>
+            </div>
+            <!-- end of edit column -->
+        </div>
+    </div>
+    <hr style="border: 2px solid orange;">
+
+
+
+    <script src="EditProfile.js"></script>
+</body>
+
+</html>

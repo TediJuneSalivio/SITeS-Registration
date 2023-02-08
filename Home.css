@@ -1,0 +1,137 @@
+/* Remove the navbar's default margin-bottom and rounded borders */
+
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+}
+
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+
+.row.content {
+    height: 450px
+}
+
+
+/* Set gray background color and 100% height */
+
+.sidenav {
+    padding-top: 20px;
+    background-color: #f1f1f1;
+    height: 100%;
+}
+
+
+/* Set black background color, white text and some padding */
+
+footer {
+    background-color: #555;
+    color: white;
+    padding: 15px;
+}
+
+img {
+    position: absolute;
+    margin-left: -27.5%;
+    margin-right: auto;
+    margin-top: 55%;
+    max-width: 55%;
+    max-height: 55%;
+}
+
+.link {
+    color: green;
+}
+
+#firstHr {
+    border: 2px solid orange;
+    width: 50%;
+    margin-top: 1%;
+}
+
+#secondHr {
+    border: 2px solid orange;
+    margin-top: 1%;
+}
+
+#thirdHr {
+    border: 1px solid orange;
+    width: 40%;
+    /* margin: 0px; */
+}
+
+#firstH3 {
+    text-align: center;
+    font-family: sans-serif;
+    font-weight: 500;
+}
+
+#firstP {
+    text-align: center;
+    font-family: sans-serif;
+    margin-top: -1%;
+    font-size: 18px;
+    font-weight: 500;
+    font-style: bold;
+}
+
+.Position {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.Name {
+    font-size: 16px;
+    text-align: center;
+}
+
+.Email {
+    font-size: 16px;
+    text-align: center;
+}
+
+.Contact {
+    font-size: 16px;
+    text-align: center;
+}
+
+#Mission {
+    text-align: center;
+    font-weight: bold;
+}
+
+#MissionVal {
+    text-align: center;
+}
+
+#Vision {
+    text-align: center;
+    font-weight: bold;
+}
+
+#VisionVal {
+    text-align: center;
+}
+
+#CoreValues {
+    text-align: center;
+    font-weight: bold;
+}
+
+.CoreValueVal {
+    text-align: center;
+}
+
+
+/* On small screens, set height to 'auto' for sidenav and grid */
+
+@media screen and (max-width: 767px) {
+    .sidenav {
+        height: auto;
+        padding: 15px;
+    }
+    .row.content {
+        height: auto;
+    }
+}

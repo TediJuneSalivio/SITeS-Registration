@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<head>
+    <title> Register </title>
+    <link rel="stylesheet" type="text/css" href="Register.css">
+    <link rel="shortcut icon" type="image" href="sitesLogo.png">
+</head>
+
+
+<body>
+
+    <img src="sitesLogo.png" alt="">
+
+    <div class="container">
+        <div class="header">
+            <h1>Register</h1>
+        </div>
+
+        <div class="main">
+            <form id="form">
+                <span>
+                    <input type="text" placeholder="Last Name" id="lName" required>
+                </span>
+
+                <span>
+                    <input type="text" placeholder="First Name" id="fName" required>
+                </span>
+
+                <span>
+                    <input type="number" placeholder="Id Number" id="idNumber" required>
+                </span>
+
+                <span>
+                    <select id="year">
+                        <option id="opt1">1st Year</option>
+                        <option id="opt2">2nd Year</option>
+                        <option id="opt3">3rd Year</option>
+                        <option id="opt4">4th Year</option>
+                    </select> 
+                </span>
+
+                <span>
+                    <input type="password" placeholder="Password" id="newPassword" required>
+                </span>
+
+                <button onclick="passData()">Register</button> <br>
+                <a href="Index.html" style="color:blue">Go back to login</a>
+            </form>
+        </div>
+    </div>
+
+    <script src="Register.js"></script>
+</body>
+
+</html>

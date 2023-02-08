@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Profiling</title>
+    <link rel="stylesheet" href="Photo.css">
+    <link rel="shortcut icon" type="image" href="sitesLogo.png">
+    <script src="Users.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body onload="OnLoad()">
+
+    <img src="sitesLogo.png">
+
+    <div class="container">
+
+        <div class="header">
+            <h1>Student Information</h1>
+        </div>
+
+        <div class="main">
+
+            <form id="form">
+                <label style="color: white;">Last Name:</label>
+                <span id="lName"></span>
+                <br>
+                <hr>
+                <label style="color: white;">First Name:</label>
+                <span id="fName"></span>
+                <br>
+                <hr>
+                <label style="color: white;">ID Number:</label>
+                <span id="IDNumber"></span>
+                <br>
+                <hr>
+                <label style="color: white;">Year Level:</label>
+                <span id="yearLevel"></span>
+                <br>
+                <hr>
+                <label style="color: white;">Password:</label>
+                <span id="Password"></span>
+            </form>
+        </div>
+    </div>
+
+    <h1 id="videoTag">Take Photo</h1>
+    <!-- Stream video via webcam -->
+    <div class="video-wrap">
+        <video id="video" playsinline autoplay>Camera</video>
+    </div>
+
+    <!-- Trigger canvas web API -->
+    <div class="controller">
+        <button id="snap">Capture</button>
+    </div>
+
+
+    <h1 id="canvasTag">Profile Photo</h1>
+    <!-- Webcam video snapshot -->
+    <canvas id="canvas" width="250" height="225"></canvas>
+
+    <!-- Save profile -->
+    <button id="SaveProfile" onclick="SaveProfile()">Save Profile</button>
+
+    <!-- script tag -->
+    <script src="Photo.js"></script>
+</body>
+
+</html>

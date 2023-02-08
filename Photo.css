@@ -1,0 +1,148 @@
+body {
+    background-image: url('https://pnc.edu.ph/images/cover.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/* video design */
+
+#video {
+    border-radius: 10px;
+}
+
+
+/* Moving camera design */
+
+.video-wrap {
+    position: absolute;
+    right: 41.5%;
+    top: 27%;
+    font-size: 1.6rem;
+    display: grid;
+    padding: 1rem;
+    border: 6px solid #4CAF50;
+    border-image: linear-gradient(to bottom, orange, green) 0 1;
+}
+
+
+/* canvas design */
+
+#canvas {
+    position: absolute;
+    right: 11.5%;
+    top: 27.5%;
+    display: grid;
+    border: 6px solid #4CAF50;
+    padding: 1rem;
+    border-image: linear-gradient(45deg, orange, green) 1;
+}
+
+
+/* button design */
+
+#snap {
+    position: absolute;
+    right: 47.5%;
+    top: 66%;
+    font-size: 17px;
+    background-color: #4CAF50;
+    border: 3px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* save button design */
+
+#SaveProfile {
+    position: absolute;
+    right: 16%;
+    top: 69%;
+    font-size: 17px;
+    background-color: #4CAF50;
+    border: 3px solid;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+/* info design */
+
+.container {
+    width: 350px;
+    margin: 2%;
+    margin-top: 10%;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px #333;
+}
+
+.header {
+    text-align: center;
+    padding-top: 75px;
+}
+
+.header h1 {
+    color: white;
+    font-size: 35px;
+    margin-top: -50px;
+    margin-bottom: 20px;
+}
+
+.main span {
+    position: relative;
+}
+
+img {
+    position: relative;
+    margin-left: 9.7%;
+    margin-right: auto;
+    margin-top: 3%;
+    margin-bottom: -10%;
+    max-width: 11%;
+    max-height: 11%;
+}
+
+#form span {
+    color: white;
+    font-size: 20px;
+    font-weight: 100;
+    font-style: italic;
+    position: relative;
+    text-align: center;
+    margin-left: 45%;
+}
+
+#form label {
+    position: absolute;
+    margin-top: 1px;
+    margin-left: 40px;
+    font-family: sans-serif;
+}
+
+#videoTag {
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 40.6%;
+    border: 4px solid #4CAF50;
+    border-image: linear-gradient(to bottom, orange, green) 0 1;
+}
+
+#canvasTag {
+    color: white;
+    font-family: sans-serif;
+    position: absolute;
+    margin-top: -28%;
+    margin-left: 69.5%;
+    border: 4px solid #4CAF50;
+    border-image: linear-gradient(45deg, orange, green) 1;
+}
